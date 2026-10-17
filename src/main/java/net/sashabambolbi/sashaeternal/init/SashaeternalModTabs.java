@@ -25,5 +25,6 @@ public class SashaeternalModTabs {
 				tabData.accept(SashaeternalModItems.ETERUOS_CRYSTAL.get());
 				tabData.accept(SashaeternalModItems.BLOOD_BUCKET.get());
 				tabData.accept(SashaeternalModBlocks.CRYSTAL_BALL.get().asItem());
+				tabData.accept(SashaeternalModItems.SPIRE_IRON.get());
 			}).build());
 }
