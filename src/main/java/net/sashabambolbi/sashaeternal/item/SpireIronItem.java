@@ -29,11 +29,10 @@ public class SpireIronItem extends SwordItem {
 			return InteractionResultHolder.fail(itemStack);
 		}
 
-		if (level.isClientSide) {
-			return InteractionResultHolder.pass(itemStack);
-		}
-
 		if (player.isShiftKeyDown()) {
+			if (level.isClientSide) {
+				return InteractionResultHolder.success(itemStack);
+			}
 			// Кидаем копьё как трезубец
 			ThrownTrident trident = new ThrownTrident(level, player, itemStack);
 			trident.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 2.5F, 1.0F);
