@@ -1,5 +1,6 @@
 package net.sashabambolbi.sashaeternal.item;
 
+import net.sashabambolbi.sashaeternal.procedures.WeaponClassCheckProcedure;
 import net.minecraft.world.entity.EntityLiving;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.ThrownTrident;
@@ -8,7 +9,8 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.nbt.Tag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.Level;
 
 public class SpireIronItem extends SwordItem {
@@ -19,6 +21,13 @@ public class SpireIronItem extends SwordItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level level, Player player, net.minecraft.world.InteractionHand hand) {
 		ItemStack itemStack = player.getItemInHand(hand);
+
+		if (!WeaponClassCheckProcedure.canUseWeapon(player, "spear")) {
+			if (!level.isClientSide && player != null) {
+				player.displayClientMessage(Component.literal("§c" + WeaponClassCheckProcedure.getClassRequirement("spear")), true);
+			}
+			return InteractionResultHolder.fail(itemStack);
+		}
 
 		if (level.isClientSide) {
 			return InteractionResultHolder.pass(itemStack);
@@ -38,6 +47,11 @@ public class SpireIronItem extends SwordItem {
 
 	@Override
 	public boolean hurtEnemy(ItemStack stack, EntityLiving target, EntityLiving attacker) {
+		if (attacker instanceof Player player) {
+			if (!WeaponClassCheckProcedure.canUseWeapon(player, "spear")) {
+				return false;
+			}
+		}
 		stack.hurtAndBreak(1, attacker, (entity) -> entity.broadcastBreakEvent(EquipmentSlot.MAINHAND));
 		return true;
 	}
@@ -49,7 +63,7 @@ public class SpireIronItem extends SwordItem {
 
 	@Override
 	public int getEnchantmentValue() {
-		return 14; // Как у железного меча
+		return 14;
 	}
 }
 
