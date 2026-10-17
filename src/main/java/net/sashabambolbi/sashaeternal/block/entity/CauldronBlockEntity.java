@@ -128,9 +128,21 @@ public class CauldronBlockEntity extends RandomizableContainerBlockEntity implem
 		protected void onContentsChanged() {
 			super.onContentsChanged();
 			setChanged();
-			level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
+			if (level != null && !level.isClientSide) {
+				level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 3);
+			}
 		}
 	};
+
+	@Override
+	public int[] getSlotsForFace(Direction side) {
+		int size = this.getContainerSize();
+		int[] slots = new int[size];
+		for (int i = 0; i < size; i++) {
+			slots[i] = i;
+		}
+		return slots;
+	}
 
 	@Override
 	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {

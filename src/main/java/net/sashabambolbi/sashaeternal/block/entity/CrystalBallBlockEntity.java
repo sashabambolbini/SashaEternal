@@ -33,6 +33,7 @@ import io.netty.buffer.Unpooled;
 public class CrystalBallBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.withSize(0, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+	private final int[] cachedSlots = new int[0];
 
 	public CrystalBallBlockEntity(BlockPos position, BlockState state) {
 		super(SashaeternalModBlockEntities.CRYSTAL_BALL.get(), position, state);
@@ -71,9 +72,10 @@ public class CrystalBallBlockEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public boolean isEmpty() {
-		for (ItemStack itemstack : this.stacks)
+		for (ItemStack itemstack : this.stacks) {
 			if (!itemstack.isEmpty())
 				return false;
+		}
 		return true;
 	}
 
@@ -109,7 +111,12 @@ public class CrystalBallBlockEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public int[] getSlotsForFace(Direction side) {
-		return IntStream.range(0, this.getContainerSize()).toArray();
+		int size = this.getContainerSize();
+		int[] slots = new int[size];
+		for (int i = 0; i < size; i++) {
+			slots[i] = i;
+		}
+		return slots;
 	}
 
 	@Override
