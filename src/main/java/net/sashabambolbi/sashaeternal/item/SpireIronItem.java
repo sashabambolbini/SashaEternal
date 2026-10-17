@@ -13,7 +13,7 @@ import net.minecraft.world.level.Level;
 
 public class SpireIronItem extends SwordItem {
 	public SpireIronItem(Tier tier) {
-		super(tier, 3, -2.4f, new Item.Properties().durability(250));
+		super(tier, 3, -2.4f, new Item.Properties());
 	}
 
 	@Override
