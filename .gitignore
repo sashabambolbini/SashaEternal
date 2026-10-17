@@ -1,7 +1,25 @@
+# Gradle
 .gradle/
 build/
-run/
-run-data/
+out/
+
+# IntelliJ IDEA
 .idea/
 *.iml
-out/
+*.iws
+*.ipr
+*.class
+
+# Run directories
+run/
+run-data/
+
+# OS files
+.DS_Store
+thumbs.db
+*.swp
+*.swo
+
+# MCreator
+mcreator-backup/
+*.mcreator
