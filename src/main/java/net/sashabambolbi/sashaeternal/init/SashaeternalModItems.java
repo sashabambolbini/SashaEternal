@@ -8,6 +8,7 @@ import net.sashabambolbi.sashaeternal.item.EteruosCrystalItem;
 import net.sashabambolbi.sashaeternal.item.CrystallizedBloodItem;
 import net.sashabambolbi.sashaeternal.item.CorruptedKfineItem;
 import net.sashabambolbi.sashaeternal.item.BloodItem;
+import net.sashabambolbi.sashaeternal.item.SpireIronItem;
 import net.sashabambolbi.sashaeternal.SashaeternalMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -18,6 +19,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Tiers;
 
 public class SashaeternalModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, SashaeternalMod.MODID);
@@ -30,6 +32,7 @@ public class SashaeternalModItems {
 	public static final RegistryObject<Item> ETERUOS_CRYSTAL;
 	public static final RegistryObject<Item> BLOOD_BUCKET;
 	public static final RegistryObject<Item> CRYSTAL_BALL;
+	public static final RegistryObject<Item> SPIRE_IRON;
 	static {
 		THE_CORRUPTION_ORE = block(SashaeternalModBlocks.THE_CORRUPTION_ORE);
 		THE_CORRUPTION_CRYSTAL = REGISTRY.register("the_corruption_crystal", TheCorruptionCrystalItem::new);
@@ -40,6 +43,7 @@ public class SashaeternalModItems {
 		ETERUOS_CRYSTAL = REGISTRY.register("eteruos_crystal", EteruosCrystalItem::new);
 		BLOOD_BUCKET = REGISTRY.register("blood_bucket", BloodItem::new);
 		CRYSTAL_BALL = block(SashaeternalModBlocks.CRYSTAL_BALL, new Item.Properties().rarity(Rarity.RARE));
+		SPIRE_IRON = REGISTRY.register("spire_iron", () -> new SpireIronItem(Tiers.IRON));
 	}
 
 	// Start of user code block custom items
