@@ -109,11 +109,6 @@ public class CauldronBlockEntity extends RandomizableContainerBlockEntity implem
 	}
 
 	@Override
-	public int[] getSlotsForFace(Direction side) {
-		return IntStream.range(0, this.getContainerSize()).toArray();
-	}
-
-	@Override
 	public boolean canPlaceItemThroughFace(int index, ItemStack itemstack, @Nullable Direction direction) {
 		return this.canPlaceItem(index, itemstack);
 	}

@@ -1,11 +1,12 @@
 package net.sashabambolbi.sashaeternal.item;
 
 import net.sashabambolbi.sashaeternal.procedures.WeaponClassCheckProcedure;
-import net.minecraft.world.entity.EntityLiving;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tier;
 import net.minecraft.network.chat.Component;
 
@@ -15,7 +16,7 @@ public class RestrictedSwordItem extends SwordItem {
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack stack, EntityLiving target, EntityLiving attacker) {
+	public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
 		if (attacker instanceof Player player) {
 			if (!WeaponClassCheckProcedure.canUseWeapon(player, "sword")) {
 				if (player.level().isClientSide == false) {
