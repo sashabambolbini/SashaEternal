@@ -1,0 +1,9 @@
+{
+  "parent": "sashaeternal:custom/crystal_ball",
+  "textures": {
+    "all": "sashaeternal:block/crystalballtexture",
+    "particle": "minecraft:block/cracked_deepslate_bricks",
+    "0": "sashaeternal:block/crystalballtexture"
+  },
+  "render_type": "solid"
+}

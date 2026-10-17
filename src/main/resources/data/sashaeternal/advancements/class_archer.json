@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:bow"
+    },
+    "title": {
+      "translate": "advancements.class_archer.title"
+    },
+    "description": {
+      "translate": "advancements.class_archer.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "class_archer_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

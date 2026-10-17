@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "Items.HEART_OF_THE_SEA"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "Blocks.DEEPSLATE_TILE_SLAB",
+      "Items.HEART_OF_THE_SEA",
+      "Blocks.DEEPSLATE_TILE_SLAB",
+      "",
+      "CUSTOM:EteruosCrystal",
+      "",
+      "Blocks.DEEPSLATE_TILE_SLAB",
+      "Blocks.DEEPSLATE_TILES",
+      "Blocks.DEEPSLATE_TILE_SLAB"
+    ],
+    "recipeReturnStack": "CUSTOM:CrystalBall",
+    "name": "crystal_ballcraft",
+    "namespace": "mod"
+  }
+}

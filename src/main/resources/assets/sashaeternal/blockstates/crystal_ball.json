@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sashaeternal:block/crystal_ball"
+    },
+    "facing=east": {
+      "model": "sashaeternal:block/crystal_ball",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "sashaeternal:block/crystal_ball",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sashaeternal:block/crystal_ball",
+      "y": 270
+    }
+  }
+}

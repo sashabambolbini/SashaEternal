@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sashaeternal:block/cauldron_full"
+    },
+    "facing=east": {
+      "model": "sashaeternal:block/cauldron_full",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "sashaeternal:block/cauldron_full",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sashaeternal:block/cauldron_full",
+      "y": 270
+    }
+  }
+}

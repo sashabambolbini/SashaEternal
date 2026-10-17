@@ -1,0 +1,46 @@
+package net.sashabambolbi.sashaeternal.client.screens;
+
+import net.sashabambolbi.sashaeternal.procedures.EteruosbarcountTextProcedure;
+import net.sashabambolbi.sashaeternal.procedures.EteruosBarCountProcedure;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
+import net.minecraftforge.client.event.RenderGuiEvent;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.util.Mth;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.Minecraft;
+
+@Mod.EventBusSubscriber(Dist.CLIENT)
+public class EteruosBarOverlay {
+	private static final ResourceLocation SPRITE_0 = new ResourceLocation("sashaeternal:textures/screens/eteruosbar.png");
+
+	@SubscribeEvent(priority = EventPriority.NORMAL)
+	public static void eventHandler(RenderGuiEvent.Pre event) {
+		int w = event.getWindow().getGuiScaledWidth();
+		int h = event.getWindow().getGuiScaledHeight();
+		Level world = null;
+		double x = 0;
+		double y = 0;
+		double z = 0;
+		Player entity = Minecraft.getInstance().player;
+		if (entity != null) {
+			world = entity.level();
+			x = entity.getX();
+			y = entity.getY();
+			z = entity.getZ();
+		}
+		if (true) {
+
+			event.getGuiGraphics().blit(SPRITE_0, w / 2 + 13, h / 2 + 79, 0, Mth.clamp((int) EteruosBarCountProcedure.execute(entity) * 7, 0, 210), 78, 7, 78, 217);
+
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					EteruosbarcountTextProcedure.execute(entity), w / 2 + 92, h / 2 + 79, -16737895, false);
+		}
+	}
+}

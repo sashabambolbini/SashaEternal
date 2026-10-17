@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:iron_sword"
+    },
+    "title": {
+      "translate": "advancements.class_warrior.title"
+    },
+    "description": {
+      "translate": "advancements.class_warrior.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "class_warrior_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

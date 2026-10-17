@@ -1,0 +1,9 @@
+{
+  "parent": "sashaeternal:custom/cauldronempty",
+  "textures": {
+    "all": "sashaeternal:block/cauldronempty",
+    "particle": "minecraft:block/cauldron_inner",
+    "0": "sashaeternal:block/cauldronempty"
+  },
+  "render_type": "solid"
+}

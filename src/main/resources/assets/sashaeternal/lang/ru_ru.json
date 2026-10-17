@@ -1,0 +1,23 @@
+{
+  "block.sashaeternal.the_corruption_ore": "Руда искажения",
+  "item.sashaeternal.the_corruption_crystal": "Искажённый кристал",
+  "item_group.sashaeternal.sasha_eternal": "Sasha Eternal",
+  "item.sashaeternal.corrupted_kfine": "Искажённый кинжал",
+  "item.sashaeternal.crystallized_blood": "Кристаллизованная кровь",
+  "block.sashaeternal.cauldron": "Котёл",
+  "block.sashaeternal.cauldron_full": "Cauldron Full",
+  "item.sashaeternal.eteruos_crystal": "Кристал Этериуса",
+  "item.sashaeternal.blood_bucket": "Ведро крови",
+  "block.sashaeternal.blood": "Blood",
+  "fluid.sashaeternal.blood": "Blood",
+  "fluid_type.sashaeternal.blood": "Blood",
+  "block.sashaeternal.crystal_ball": "Хрустальный шар",
+  "advancements.class_warrior.title": "Класс Воина",
+  "advancements.class_warrior.descr": "Выбрать класс воина",
+  "advancements.class_mage.descr": "Выбрать класс мага",
+  "advancements.class_mage.title": "Класс мага",
+  "advancements.class_spear_man.descr": "Выбрать класс копейщика",
+  "advancements.class_spear_man.title": "Класс копейщика",
+  "advancements.class_archer.descr": "Выбрать класс лучника",
+  "advancements.class_archer.title": "Класс лучника"
+}

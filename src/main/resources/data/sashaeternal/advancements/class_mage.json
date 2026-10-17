@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:magma_cream"
+    },
+    "title": {
+      "translate": "advancements.class_mage.title"
+    },
+    "description": {
+      "translate": "advancements.class_mage.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "class_mage_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

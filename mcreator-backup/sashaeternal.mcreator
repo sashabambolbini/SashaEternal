@@ -1,0 +1,705 @@
+{
+  "mod_elements": [
+    {
+      "name": "EteruosRegenPassive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eteruos_regen_passive",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/procedures/EteruosRegenPassiveProcedure.java"
+        ]
+      },
+      "path": "~/Eteruos"
+    },
+    {
+      "name": "EteruosbarcountText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eteruosbarcount_text",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/procedures/EteruosbarcountTextProcedure.java"
+        ]
+      },
+      "path": "~/Eteruos"
+    },
+    {
+      "name": "EteruosBarCount",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eteruos_bar_count",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/procedures/EteruosBarCountProcedure.java"
+        ]
+      },
+      "path": "~/Eteruos"
+    },
+    {
+      "name": "EteruosBar",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eteruos_bar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/client/screens/EteruosBarOverlay.java"
+        ]
+      },
+      "path": "~/Eteruos"
+    },
+    {
+      "name": "TheCorruptionOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_corruption_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sashaeternal/blockstates/the_corruption_ore.json",
+          "src/main/resources/data/sashaeternal/loot_tables/blocks/the_corruption_ore.json",
+          "src/main/resources/assets/sashaeternal/models/item/the_corruption_ore.json",
+          "src/main/resources/data/sashaeternal/worldgen/placed_feature/the_corruption_ore.json",
+          "src/main/resources/data/sashaeternal/worldgen/configured_feature/the_corruption_ore.json",
+          "src/main/java/net/sashabambolbi/sashaeternal/block/TheCorruptionOreBlock.java",
+          "src/main/resources/data/sashaeternal/forge/biome_modifier/the_corruption_ore_biome_modifier.json",
+          "src/main/resources/assets/sashaeternal/models/block/the_corruption_ore.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "TheCorruptionCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_corruption_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sashaeternal/models/item/the_corruption_crystal.json",
+          "src/main/java/net/sashabambolbi/sashaeternal/item/TheCorruptionCrystalItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "SashaEternal",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sasha_eternal",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CorruptedKfine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrupted_kfine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sashaeternal/models/item/corrupted_kfine.json",
+          "src/main/java/net/sashabambolbi/sashaeternal/item/CorruptedKfineItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "CrystallizedBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallized_blood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sashaeternal/models/item/crystallized_blood.json",
+          "src/main/java/net/sashabambolbi/sashaeternal/item/CrystallizedBloodItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "CorruptedKfinePriShchielchkiePKM",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrupted_kfine_pri_shchielchkie_pkm",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/procedures/CorruptedKfinePriShchielchkiePKMProcedure.java"
+        ]
+      },
+      "path": "~/item/itemprocedure"
+    },
+    {
+      "name": "Cauldron",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cauldron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/block/CauldronBlock.java",
+          "src/main/resources/assets/sashaeternal/blockstates/cauldron.json",
+          "src/main/resources/data/sashaeternal/loot_tables/blocks/cauldron.json",
+          "src/main/resources/assets/sashaeternal/models/block/cauldron.json",
+          "src/main/resources/assets/sashaeternal/models/item/cauldron.json",
+          "src/main/java/net/sashabambolbi/sashaeternal/block/entity/CauldronBlockEntity.java"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "CauldronCreate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cauldron_create",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/procedures/CauldronCreateProcedure.java"
+        ]
+      },
+      "path": "~/prcedure"
+    },
+    {
+      "name": "Corruptionkniferec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruptionkniferec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/sashaeternal/advancements/recipes/corruptionkniferec.json",
+          "src/main/resources/data/sashaeternal/recipes/corruptionkniferec.json"
+        ]
+      },
+      "path": "~/craft"
+    },
+    {
+      "name": "CauldronFull",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cauldron_full",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sashaeternal/models/block/cauldron_full.json",
+          "src/main/java/net/sashabambolbi/sashaeternal/block/entity/CauldronFullBlockEntity.java",
+          "src/main/resources/data/sashaeternal/loot_tables/blocks/cauldron_full.json",
+          "src/main/resources/assets/sashaeternal/blockstates/cauldron_full.json",
+          "src/main/java/net/sashabambolbi/sashaeternal/block/CauldronFullBlock.java",
+          "src/main/resources/assets/sashaeternal/models/item/cauldron_full.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "EteruosCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eteruos_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/item/EteruosCrystalItem.java",
+          "src/main/resources/assets/sashaeternal/models/item/eteruos_crystal.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Cauldronfilledpr",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cauldronfilledpr",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/procedures/CauldronfilledprProcedure.java"
+        ]
+      },
+      "path": "~/prcedure"
+    },
+    {
+      "name": "Blood",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sashaeternal/models/block/blood.json",
+          "src/main/java/net/sashabambolbi/sashaeternal/block/BloodBlock.java",
+          "src/main/resources/assets/sashaeternal/models/item/blood_bucket.json",
+          "src/main/java/net/sashabambolbi/sashaeternal/item/BloodItem.java",
+          "src/main/java/net/sashabambolbi/sashaeternal/fluid/types/BloodFluidType.java",
+          "src/main/java/net/sashabambolbi/sashaeternal/fluid/BloodFluid.java",
+          "src/main/resources/assets/sashaeternal/blockstates/blood.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "CauldronFillBucket",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cauldron_fill_bucket",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/procedures/CauldronFillBucketProcedure.java"
+        ]
+      },
+      "path": "~/prcedure"
+    },
+    {
+      "name": "CrystalBall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_ball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/sashaeternal/blockstates/crystal_ball.json",
+          "src/main/java/net/sashabambolbi/sashaeternal/block/CrystalBallBlock.java",
+          "src/main/resources/assets/sashaeternal/models/item/crystal_ball.json",
+          "src/main/resources/data/sashaeternal/loot_tables/blocks/crystal_ball.json",
+          "src/main/resources/assets/sashaeternal/models/block/crystal_ball.json",
+          "src/main/java/net/sashabambolbi/sashaeternal/block/entity/CrystalBallBlockEntity.java"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "CrystalBallcraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_ballcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/sashaeternal/recipes/crystal_ballcraft.json",
+          "src/main/resources/data/sashaeternal/advancements/recipes/crystal_ballcraft.json"
+        ]
+      },
+      "path": "~/craft"
+    },
+    {
+      "name": "Crystalballgu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalballgu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/network/CrystalballguButtonMessage.java",
+          "src/main/java/net/sashabambolbi/sashaeternal/client/gui/CrystalballguScreen.java",
+          "src/main/java/net/sashabambolbi/sashaeternal/world/inventory/CrystalballguMenu.java"
+        ]
+      },
+      "path": "~/gui"
+    },
+    {
+      "name": "ClassWarrior",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "class_warrior",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/sashaeternal/advancements/class_warrior.json"
+        ]
+      },
+      "path": "~/achivment"
+    },
+    {
+      "name": "ClassMage",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "class_mage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/sashaeternal/advancements/class_mage.json"
+        ]
+      },
+      "path": "~/achivment"
+    },
+    {
+      "name": "PlayerClassMage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_class_mage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/procedures/PlayerClassMageProcedure.java"
+        ]
+      },
+      "path": "~/gui/guiprocedure"
+    },
+    {
+      "name": "PlayerClassWarrior",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_class_warrior",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/procedures/PlayerClassWarriorProcedure.java"
+        ]
+      },
+      "path": "~/gui/guiprocedure"
+    },
+    {
+      "name": "ClassSpearMan",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "class_spear_man",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/sashaeternal/advancements/class_spear_man.json"
+        ]
+      },
+      "path": "~/achivment"
+    },
+    {
+      "name": "PlayerClassSpearman",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_class_spearman",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/procedures/PlayerClassSpearmanProcedure.java"
+        ]
+      },
+      "path": "~/gui/guiprocedure"
+    },
+    {
+      "name": "ClassArcher",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "class_archer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/sashaeternal/advancements/class_archer.json"
+        ]
+      },
+      "path": "~/achivment"
+    },
+    {
+      "name": "PlayerClassArcher",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_class_archer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/sashabambolbi/sashaeternal/procedures/PlayerClassArcherProcedure.java"
+        ]
+      },
+      "path": "~/gui/guiprocedure"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Eteruos",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "maxEteruos",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "player_class",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CrystalBall@CUSTOM:CrystalBall",
+      "~CauldronFull@CUSTOM:CauldronFull",
+      "~Cauldron@CUSTOM:Cauldron",
+      "~TheCorruptionOre@CUSTOM:TheCorruptionOre"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~TheCorruptionOre@CUSTOM:TheCorruptionOre"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~Blood@CUSTOM:Blood"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.sashaeternal.the_corruption_ore": "The Corruption Ore",
+      "item.sashaeternal.the_corruption_crystal": "The Corruption Crystal",
+      "item_group.sashaeternal.sasha_eternal": "Sasha Eternal",
+      "item.sashaeternal.corrupted_kfine": "Corrupted Kfine",
+      "item.sashaeternal.crystallized_blood": "Crystallized Blood",
+      "block.sashaeternal.cauldron": "Cauldron",
+      "block.sashaeternal.cauldron_full": "Cauldron Full",
+      "item.sashaeternal.eteruos_crystal": "Eteruos Crystal",
+      "item.sashaeternal.blood_bucket": "Blood Bucket",
+      "block.sashaeternal.blood": "Blood",
+      "fluid.sashaeternal.blood": "Blood",
+      "fluid_type.sashaeternal.blood": "Blood",
+      "block.sashaeternal.crystal_ball": "Crystal Ball",
+      "advancements.class_warrior.title": "Class warrior",
+      "advancements.class_warrior.descr": "Select a warrior class ",
+      "advancements.class_mage.descr": "Select a mage class ",
+      "advancements.class_mage.title": "Class mage",
+      "advancements.class_spear_man.descr": "Select a spearman class ",
+      "advancements.class_spear_man.title": "Class Spearman",
+      "advancements.class_archer.descr": "Select a archer class ",
+      "advancements.class_archer.title": "Class Archer"
+    },
+    "ru_ru": {
+      "block.sashaeternal.the_corruption_ore": "Руда искажения",
+      "item.sashaeternal.the_corruption_crystal": "Искажённый кристал",
+      "item_group.sashaeternal.sasha_eternal": "Sasha Eternal",
+      "item.sashaeternal.corrupted_kfine": "Искажённый кинжал",
+      "item.sashaeternal.crystallized_blood": "Кристаллизованная кровь",
+      "block.sashaeternal.cauldron": "Котёл",
+      "block.sashaeternal.cauldron_full": "Cauldron Full",
+      "item.sashaeternal.eteruos_crystal": "Кристал Этериуса",
+      "item.sashaeternal.blood_bucket": "Ведро крови",
+      "block.sashaeternal.blood": "Blood",
+      "fluid.sashaeternal.blood": "Blood",
+      "fluid_type.sashaeternal.blood": "Blood",
+      "block.sashaeternal.crystal_ball": "Хрустальный шар",
+      "advancements.class_warrior.title": "Класс Воина",
+      "advancements.class_warrior.descr": "Выбрать класс воина",
+      "advancements.class_mage.descr": "Выбрать класс мага",
+      "advancements.class_mage.title": "Класс мага",
+      "advancements.class_spear_man.descr": "Выбрать класс копейщика",
+      "advancements.class_spear_man.title": "Класс копейщика",
+      "advancements.class_archer.descr": "Выбрать класс лучника",
+      "advancements.class_archer.title": "Класс лучника"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/sashabambolbi/sashaeternal/init/SashaeternalModFluids.java",
+      "src/main/java/net/sashabambolbi/sashaeternal/init/SashaeternalModFluidTypes.java",
+      "src/main/java/net/sashabambolbi/sashaeternal/init/SashaeternalModMenus.java",
+      "src/main/java/net/sashabambolbi/sashaeternal/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/sashabambolbi/sashaeternal/init/SashaeternalModScreens.java",
+      "src/main/java/net/sashabambolbi/sashaeternal/init/SashaeternalModBlocks.java",
+      "src/main/java/net/sashabambolbi/sashaeternal/init/SashaeternalModBlockEntities.java",
+      "src/main/java/net/sashabambolbi/sashaeternal/init/SashaeternalModItems.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/sashabambolbi/sashaeternal/SashaeternalMod.java",
+      "src/main/java/net/sashabambolbi/sashaeternal/init/SashaeternalModTabs.java",
+      "src/main/java/net/sashabambolbi/sashaeternal/network/SashaeternalModVariables.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Eteruos",
+        "children": []
+      },
+      {
+        "name": "item",
+        "children": [
+          {
+            "name": "itemprocedure",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "block",
+        "children": []
+      },
+      {
+        "name": "prcedure",
+        "children": []
+      },
+      {
+        "name": "craft",
+        "children": []
+      },
+      {
+        "name": "gui",
+        "children": [
+          {
+            "name": "guiprocedure",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "achivment",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "sashaeternal",
+    "modName": "SashaEternal",
+    "version": "1.1",
+    "author": "SashaBambolbi",
+    "websiteURL": "https://mcreator.net",
+    "license": "MIT License",
+    "serverSideOnly": true,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "thanks to Mcreator",
+    "modElementsPackage": "net.sashabambolbi.sashaeternal"
+  },
+  "mcreatorVersion": 202600299999
+}

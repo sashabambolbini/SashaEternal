@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    " c ",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:deepslate_tile_slab"
+    },
+    "b": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "c": {
+      "item": "sashaeternal:eteruos_crystal"
+    },
+    "d": {
+      "item": "minecraft:deepslate_tiles"
+    }
+  },
+  "result": {
+    "item": "sashaeternal:crystal_ball",
+    "count": 1
+  }
+}

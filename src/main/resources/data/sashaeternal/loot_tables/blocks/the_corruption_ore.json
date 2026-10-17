@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "sashaeternal:blocks/the_corruption_ore",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sashaeternal:the_corruption_crystal"
+        }
+      ]
+    }
+  ]
+}

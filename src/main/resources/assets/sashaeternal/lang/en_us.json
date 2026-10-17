@@ -1,0 +1,23 @@
+{
+  "block.sashaeternal.the_corruption_ore": "The Corruption Ore",
+  "item.sashaeternal.the_corruption_crystal": "The Corruption Crystal",
+  "item_group.sashaeternal.sasha_eternal": "Sasha Eternal",
+  "item.sashaeternal.corrupted_kfine": "Corrupted Kfine",
+  "item.sashaeternal.crystallized_blood": "Crystallized Blood",
+  "block.sashaeternal.cauldron": "Cauldron",
+  "block.sashaeternal.cauldron_full": "Cauldron Full",
+  "item.sashaeternal.eteruos_crystal": "Eteruos Crystal",
+  "item.sashaeternal.blood_bucket": "Blood Bucket",
+  "block.sashaeternal.blood": "Blood",
+  "fluid.sashaeternal.blood": "Blood",
+  "fluid_type.sashaeternal.blood": "Blood",
+  "block.sashaeternal.crystal_ball": "Crystal Ball",
+  "advancements.class_warrior.title": "Class warrior",
+  "advancements.class_warrior.descr": "Select a warrior class ",
+  "advancements.class_mage.descr": "Select a mage class ",
+  "advancements.class_mage.title": "Class mage",
+  "advancements.class_spear_man.descr": "Select a spearman class ",
+  "advancements.class_spear_man.title": "Class Spearman",
+  "advancements.class_archer.descr": "Select a archer class ",
+  "advancements.class_archer.title": "Class Archer"
+}
