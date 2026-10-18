@@ -76,14 +76,11 @@ public class SashaeternalModVariables {
 
 		@SubscribeEvent
 		public static void clonePlayer(PlayerEvent.Clone event) {
-			event.getOriginal().revive();
 			event.getOriginal().getCapability(PLAYER_VARIABLES).ifPresent(original -> {
 				event.getEntity().getCapability(PLAYER_VARIABLES).ifPresent(clone -> {
 					clone.Eteruos = original.Eteruos;
 					clone.maxEteruos = original.maxEteruos;
 					clone.player_class = original.player_class;
-					if (!event.isWasDeath()) {
-					}
 				});
 			});
 		}

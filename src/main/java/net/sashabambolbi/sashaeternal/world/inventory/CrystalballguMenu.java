@@ -23,14 +23,8 @@ import java.util.HashMap;
 import java.util.Collections;
 
 public class CrystalballguMenu extends AbstractContainerMenu implements SashaeternalModMenus.MenuAccessor {
-	public final Map<String, Object> menuState = new HashMap<>() {
-		@Override
-		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 5)
-				return null;
-			return super.put(key, value);
-		}
-	};
+	private static final int MAX_MENU_STATE = 50;
+	public final Map<String, Object> menuState = new HashMap<>(MAX_MENU_STATE);
 	public final Level world;
 	public final Player entity;
 	public int x, y, z;

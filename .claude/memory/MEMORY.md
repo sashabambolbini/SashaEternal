@@ -1,0 +1,3 @@
+- [Project Overview](project_overview.md) — SashaEternal Java project, tracking current state and goals
+- [Recent Work](recent_work.md) — Latest changes, PRs, and session progress
+- [User Preferences](user_preferences.md) — How to work with this user effectively

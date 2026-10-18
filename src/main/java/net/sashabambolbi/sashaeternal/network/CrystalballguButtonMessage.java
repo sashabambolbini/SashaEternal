@@ -1,9 +1,9 @@
 package net.sashabambolbi.sashaeternal.network;
 
-import net.sashabambolbi.sashaeternal.procedures.PlayerClassWarriorProcedure;
-import net.sashabambolbi.sashaeternal.procedures.PlayerClassSpearmanProcedure;
-import net.sashabambolbi.sashaeternal.procedures.PlayerClassMageProcedure;
 import net.sashabambolbi.sashaeternal.procedures.PlayerClassArcherProcedure;
+import net.sashabambolbi.sashaeternal.procedures.PlayerClassMageProcedure;
+import net.sashabambolbi.sashaeternal.procedures.PlayerClassSpearmanProcedure;
+import net.sashabambolbi.sashaeternal.procedures.PlayerClassWarriorProcedure;
 import net.sashabambolbi.sashaeternal.SashaeternalMod;
 
 import net.minecraftforge.network.NetworkEvent;
@@ -47,7 +47,6 @@ public record CrystalballguButtonMessage(int buttonID, int x, int y, int z) {
 			PlayerClassArcherProcedure.execute(entity);
 		}
 		if (buttonID == 1) {
-
 			PlayerClassSpearmanProcedure.execute(entity);
 		}
 		if (buttonID == 2) {

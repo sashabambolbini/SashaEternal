@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "on-session-exit": "echo 'Session ended' && git status"
+  }
+}

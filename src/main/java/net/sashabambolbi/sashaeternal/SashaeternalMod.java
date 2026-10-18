@@ -23,13 +23,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.Queue;
-import java.util.PriorityQueue;
-import java.util.Comparator;
-
-import it.unimi.dsi.fastutil.ints.IntObjectPair;
-import it.unimi.dsi.fastutil.ints.IntObjectImmutablePair;
 
 @Mod("sashaeternal")
 public class SashaeternalMod {
@@ -61,27 +54,5 @@ public class SashaeternalMod {
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder, BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
 		PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
 		messageID++;
-	}
-
-	private static final Queue<IntObjectPair<Runnable>> workToBeScheduled = new ConcurrentLinkedQueue<>();
-	private static final PriorityQueue<TickTask> workQueue = new PriorityQueue<>(Comparator.comparingInt(TickTask::getTick));
-
-	public static void queueServerWork(int delay, Runnable action) {
-		if (Thread.currentThread().getThreadGroup() == SidedThreadGroups.SERVER)
-			workToBeScheduled.add(new IntObjectImmutablePair<>(delay, action));
-	}
-
-	@SubscribeEvent
-	public void tick(TickEvent.ServerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			int currentTick = event.getServer().getTickCount();
-			IntObjectPair<Runnable> work;
-			while ((work = workToBeScheduled.poll()) != null) {
-				workQueue.add(new TickTask(currentTick + work.leftInt(), work.right()));
-			}
-			while (!workQueue.isEmpty() && currentTick >= workQueue.peek().getTick()) {
-				workQueue.poll().run();
-			}
-		}
 	}
 }
