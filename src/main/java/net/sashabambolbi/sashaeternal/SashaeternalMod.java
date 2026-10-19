@@ -37,6 +37,7 @@ public class SashaeternalMod {
 		SashaeternalModBlocks.REGISTRY.register(bus);
 		SashaeternalModBlockEntities.REGISTRY.register(bus);
 		SashaeternalModItems.REGISTRY.register(bus);
+		SashaeternalModEntities.REGISTRY.register(bus);
 		SashaeternalModTabs.REGISTRY.register(bus);
 		SashaeternalModMenus.REGISTRY.register(bus);
 		SashaeternalModFluids.REGISTRY.register(bus);

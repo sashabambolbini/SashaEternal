@@ -22,8 +22,19 @@ public class SpireIronItem extends SwordItem {
 		ItemStack itemStack = player.getItemInHand(hand);
 
 		if (player.isShiftKeyDown()) {
-			// Кидаем копьё (как трезубец)
-			return InteractionResultHolder.success(itemStack);
+			// Бросок копья
+			if (!level.isClientSide) {
+				ThrownSpireIron spire = new ThrownSpireIron(level, player);
+				spire.setItem(itemStack);
+				level.addFreshEntity(spire);
+			}
+
+			// Уменьшаем стек на 1
+			if (!player.getAbilities().instabuild) {
+				itemStack.shrink(1);
+			}
+
+			return InteractionResultHolder.sidedSuccess(itemStack, level.isClientSide());
 		}
 
 		return InteractionResultHolder.pass(itemStack);
