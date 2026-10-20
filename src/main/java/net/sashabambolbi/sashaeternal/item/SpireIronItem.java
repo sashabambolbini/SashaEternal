@@ -21,22 +21,7 @@ public class SpireIronItem extends SwordItem {
 	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
 		ItemStack itemStack = player.getItemInHand(hand);
 
-		if (player.isShiftKeyDown()) {
-			// Бросок копья
-			if (!level.isClientSide) {
-				ThrownSpireIron spire = new ThrownSpireIron(level, player);
-				spire.setItem(itemStack);
-				level.addFreshEntity(spire);
-			}
-
-			// Уменьшаем стек на 1
-			if (!player.getAbilities().instabuild) {
-				itemStack.shrink(1);
-			}
-
-			return InteractionResultHolder.sidedSuccess(itemStack, level.isClientSide());
-		}
-
+		// Убрана функция метания - теперь обычный меч/копье
 		return InteractionResultHolder.pass(itemStack);
 	}
 
